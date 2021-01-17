@@ -20,7 +20,7 @@ jobs:
         run: |
           sudo npm install
           sudo npm install hexo-cli -g 
-          sudo hexo g
+          sudo hexo d
 
       - name: Deploy
         uses: JamesIves/github-pages-deploy-action@releases/v3

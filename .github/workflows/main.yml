@@ -18,6 +18,7 @@ jobs:
 
       - name: Build
         run: |
+          sudo git submodule update --init --recursive --remote   
           sudo npm install
           sudo npm install hexo-cli -g 
           sudo hexo clean

@@ -1,0 +1,27 @@
+name: Deploy GitHub Pages
+
+on:
+  push:
+    branches:
+      - main
+
+# 任务
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+        with:
+          persist-credentials: false
+
+
+      - name: Build
+        run: npm install && hexo g
+
+      - name: Deploy
+        uses: JamesIves/github-pages-deploy-action@releases/v3
+        with:
+          ACCESS_TOKEN: ${{ secrets.BLOG_REPO_ALL }}
+          BRANCH: gh-pages
+          FOLDER: /

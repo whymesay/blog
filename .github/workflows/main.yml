@@ -20,6 +20,7 @@ jobs:
         run: |
           sudo npm install
           sudo npm install hexo-cli -g 
+          sudo hexo clean
           sudo hexo d
 
       - name: Deploy

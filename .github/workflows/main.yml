@@ -17,7 +17,7 @@ jobs:
 
 
       - name: Build
-        run: npm install && npm install hexo-cli -g && hexo g
+        run: sudo npm install && npm install hexo-cli -g && hexo g
 
       - name: Deploy
         uses: JamesIves/github-pages-deploy-action@releases/v3

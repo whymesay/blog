@@ -1,0 +1,3 @@
+[submodule "themes/fluid"]
+	url = https://github.com/whymesay/hexo-theme-fluid
+	branch = master

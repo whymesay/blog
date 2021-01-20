@@ -1,8 +1,8 @@
 ---
-title: {{ title }}
-date: {{ date }}
+title: categories
+date: 2021-01-20 19:02:48
 updated:
-type:
+type: "categories"
 comments:
 description:
 keywords:

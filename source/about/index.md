@@ -1,6 +1,6 @@
 ---
-title: {{ title }}
-date: {{ date }}
+title: about
+date: 2021-01-20 19:03:04
 updated:
 type:
 comments:

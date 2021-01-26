@@ -90,7 +90,7 @@ avatar:
 disable_top_img: false
 
 # The banner image of home page
-index_img: https://cdn.jsdelivr.net/gh/whymesay/whymesay.github.io@1.00/source/img/default.png
+index_img: https://asset.5zero.cn/bg3.png
 
 # If the banner of page not setting, it will show the top_img
 default_top_img:
@@ -510,7 +510,7 @@ tag_ui: # 留空或 index
 # Website Background (設置網站背景)
 # can set it to color or image (可設置圖片 或者 顔色)
 # The formal of image: url(http://xxxxxx.com/xxx.jpg)
-background: url('https://cdn.jsdelivr.net/gh/whymesay/whymesay.github.io@1.00/source/img/default.png')
+background: url('https://asset.5zero.cn/bg3.png')
 
 # Footer Background
 footer_bg: false

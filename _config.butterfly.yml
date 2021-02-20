@@ -79,11 +79,11 @@ katex:
 # --------------------------------------
 
 # Favicon（網站圖標）
-favicon: /img/favicon.png
+favicon: /img/favicon.jpg
 
 # Avatar (頭像)
 avatar:
-  img: /img/favicon.png
+  img: /img/avatar.jpg
   effect: false
 
 # Disable all banner image
@@ -126,7 +126,8 @@ cover:
   position: both
   # When cover is not set, the default cover is displayed (當沒有設置cover時，默認的封面顯示)
   default_cover:
-    # - https://i.loli.net/2020/05/01/gkihqEjXxJ5UZ1C.jpg
+    - https://whymesay.com/img/bg1.jpg
+    - https://whymesay.com/img/bg2.jpg
 
 # Replace Broken Images (替換無法顯示的圖片)
 error_img:

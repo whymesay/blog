@@ -31,11 +31,11 @@
         <category>Java</category>
       </categories>
       <tags>
-        <tag>Netty</tag>
+        <tag>Netty,后端</tag>
       </tags>
   </entry>
   <entry>
-    <title>SpingBoot中使用logback日志框架</title>
+    <title>SpringBoot中使用logback日志框架</title>
     <url>/2021/03/06/SpringBoot%E4%B8%AD%E4%BD%BF%E7%94%A8logback%E6%97%A5%E5%BF%97%E6%A1%86%E6%9E%B6/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>SpringBoot默认的日志框架就是logback,所以使用的时候直接使用就可以了,不需要添加其他依赖,所以这里记录几个关于配置的小问题.</p>
 <h2 id="配置"><a href="#配置" class="headerlink" title="配置"></a>配置</h2><p>1.首先在resources目录下建立文件logback-spring.xml,添加下面的内容</p>
@@ -43,6 +43,12 @@
 <p>2.在application.properties中添加以下配置</p>
 <figure class="highlight properties"><table><tr><td class="code"><pre><span class="line"><span class="meta">logging.config</span>=<span class="string">classpath:logback-spring.xml</span></span><br><span class="line"><span class="meta">logging.pattern.console</span>=<span class="string">[%d&#123;yyyy-MM-dd HH:mm:ss&#125;] -- [%-5p]: [%c] -- %m%n</span></span><br><span class="line"><span class="meta">logging.level.root</span>=<span class="string">DEBUG</span></span><br></pre></td></tr></table></figure>
 ]]></content>
+      <categories>
+        <category>后端</category>
+      </categories>
+      <tags>
+        <tag>SpringBoot,Java</tag>
+      </tags>
   </entry>
   <entry>
     <title>个人学习笔记</title>
@@ -69,7 +75,7 @@
         <category>笔记</category>
       </categories>
       <tags>
-        <tag>note</tag>
+        <tag>Note</tag>
       </tags>
   </entry>
   <entry>
@@ -82,5 +88,44 @@
 <li>Spring循环依赖解决方案</li>
 </ol>
 ]]></content>
+      <categories>
+        <category>学习</category>
+      </categories>
+      <tags>
+        <tag>Learn</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>算法-大数相乘(字符串相乘)</title>
+    <url>/2021/03/06/%E7%AE%97%E6%B3%95-%E5%A4%A7%E6%95%B0%E7%9B%B8%E4%B9%98-%E5%AD%97%E7%AC%A6%E4%B8%B2%E7%9B%B8%E4%B9%98/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><h2 id="题目描述"><a href="#题目描述" class="headerlink" title="题目描述"></a>题目描述</h2><blockquote>
+<p>给定两个字符串形式的非负整数 num1 和num2 ，计算它们的和。</p>
+<p>注意：</p>
+<p>num1 和num2 的长度都小于 5100.<br>num1 和num2 都只包含数字 0-9.<br>num1 和num2 都不包含任何前导零。<br>你不能使用任何內建 BigInteger 库， 也不能直接将输入的字符串转换为整数形式。</p>
+<p>来源：力扣（LeetCode）<br>链接：<a href="https://leetcode-cn.com/problems/add-strings">https://leetcode-cn.com/problems/add-strings</a><br>著作权归领扣网络所有。商业转载请联系官方授权，非商业转载请注明出处。</p>
+</blockquote>
+<h2 id="解决方法-竖式运算"><a href="#解决方法-竖式运算" class="headerlink" title="解决方法-竖式运算"></a>解决方法-竖式运算</h2><figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> String <span class="title">multiply</span><span class="params">(String num1, String num2)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">if</span> (num1.equals(<span class="string">&quot;0&quot;</span>) || num2.equals(<span class="string">&quot;0&quot;</span>)) &#123;</span><br><span class="line">            <span class="keyword">return</span> <span class="string">&quot;0&quot;</span>;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">int</span>[] res = <span class="keyword">new</span> <span class="keyword">int</span>[num1.length() + num2.length()];</span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> i = num1.length() - <span class="number">1</span>; i &gt;= <span class="number">0</span>; i--) &#123;</span><br><span class="line">            <span class="keyword">int</span> n1 = num1.charAt(i) - <span class="string">&#x27;0&#x27;</span>;</span><br><span class="line">            <span class="keyword">for</span> (<span class="keyword">int</span> j = num2.length() - <span class="number">1</span>; j &gt;= <span class="number">0</span>; j--) &#123;</span><br><span class="line">                <span class="keyword">int</span> n2 = num2.charAt(j) - <span class="string">&#x27;0&#x27;</span>;</span><br><span class="line">                <span class="keyword">int</span> sum = (res[i + j + <span class="number">1</span>] + n1 * n2);</span><br><span class="line">                <span class="comment">//进位处理</span></span><br><span class="line">                res[i + j + <span class="number">1</span>] = sum % <span class="number">10</span>;</span><br><span class="line">                <span class="comment">//求出当前位的值</span></span><br><span class="line">                res[i + j] += sum / <span class="number">10</span>;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        StringBuilder result = <span class="keyword">new</span> StringBuilder();</span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; res.length; i++) &#123;</span><br><span class="line">            <span class="keyword">if</span> (i == <span class="number">0</span> &amp;&amp; res[i] == <span class="number">0</span>) <span class="keyword">continue</span>;</span><br><span class="line">            result.append(res[i]);</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> result.toString();</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>作者：breezean<br>链接：<a href="https://leetcode-cn.com/problems/multiply-strings/solution/you-hua-ban-shu-shi-da-bai-994-by-breezean/">https://leetcode-cn.com/problems/multiply-strings/solution/you-hua-ban-shu-shi-da-bai-994-by-breezean/</a><br>来源：力扣（LeetCode）<br>著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。</p>
+</blockquote>
+<ul>
+<li>时间复杂度:$O(n^2)$</li>
+</ul>
+<h2 id="解决方法-Karatsuba乘法"><a href="#解决方法-Karatsuba乘法" class="headerlink" title="解决方法-Karatsuba乘法"></a>解决方法-Karatsuba乘法</h2><p><img src="/img/posts/Karatsuba.png" alt="karatsuba"></p>
+<br>
+
+<p>最后的结果就是 $x∗y=a∗c∗10^n+(a ∗ d + b ∗ c)∗10^{n/2}+bd$</p>
+<p>比如12345*6789,那么a=12,b=345,c=6,d=789</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"> <span class="comment">/**</span></span><br><span class="line"><span class="comment"> * Karatsuba乘法</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">long</span> <span class="title">karatsuba</span><span class="params">(<span class="keyword">long</span> num1, <span class="keyword">long</span> num2)</span></span>&#123;</span><br><span class="line">    <span class="comment">//递归终止条件</span></span><br><span class="line">    <span class="keyword">if</span>(num1 &lt; <span class="number">10</span> || num2 &lt; <span class="number">10</span>) <span class="keyword">return</span> num1 * num2;</span><br><span class="line">    <span class="comment">// 计算拆分长度</span></span><br><span class="line">    <span class="keyword">int</span> size1 = String.valueOf(num1).length();</span><br><span class="line">    <span class="keyword">int</span> size2 = String.valueOf(num2).length();</span><br><span class="line">    <span class="keyword">int</span> halfN = Math.max(size1, size2) / <span class="number">2</span>;</span><br><span class="line">    <span class="comment">/* 拆分为a, b, c, d */</span></span><br><span class="line">    <span class="keyword">long</span> a = Long.valueOf(String.valueOf(num1).substring(<span class="number">0</span>, size1 - halfN));</span><br><span class="line">    <span class="keyword">long</span> b = Long.valueOf(String.valueOf(num1).substring(size1 - halfN));</span><br><span class="line">    <span class="keyword">long</span> c = Long.valueOf(String.valueOf(num2).substring(<span class="number">0</span>, size2 - halfN));</span><br><span class="line">    <span class="keyword">long</span> d = Long.valueOf(String.valueOf(num2).substring(size2 - halfN));</span><br><span class="line">    <span class="comment">// 计算z2, z0, z1, 此处的乘法使用递归</span></span><br><span class="line">    <span class="keyword">long</span> z2 = karatsuba(a, c);</span><br><span class="line">    <span class="keyword">long</span> z0 = karatsuba(b, d);</span><br><span class="line">    <span class="keyword">long</span> z1 = karatsuba((a + b), (c + d)) - z0 - z2;</span><br><span class="line">    <span class="keyword">return</span> (<span class="keyword">long</span>)(z2 * Math.pow(<span class="number">10</span>, (<span class="number">2</span>*halfN)) + z1 * Math.pow(<span class="number">10</span>, halfN) + z0);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<ul>
+<li>时间复杂度:$ O(n^{log_2 3}) $</li>
+</ul>
+]]></content>
+      <categories>
+        <category>算法</category>
+      </categories>
+      <tags>
+        <tag>后端,算法</tag>
+      </tags>
   </entry>
 </search>

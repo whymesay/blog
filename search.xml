@@ -31,7 +31,8 @@
         <category>Java</category>
       </categories>
       <tags>
-        <tag>Netty,后端</tag>
+        <tag>Netty</tag>
+        <tag>后端</tag>
       </tags>
   </entry>
   <entry>
@@ -47,7 +48,8 @@
         <category>后端</category>
       </categories>
       <tags>
-        <tag>SpringBoot,Java</tag>
+        <tag>SpringBoot</tag>
+        <tag>Java</tag>
       </tags>
   </entry>
   <entry>
@@ -125,7 +127,8 @@
         <category>算法</category>
       </categories>
       <tags>
-        <tag>后端,算法</tag>
+        <tag>后端</tag>
+        <tag>算法</tag>
       </tags>
   </entry>
 </search>

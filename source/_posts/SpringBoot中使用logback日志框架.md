@@ -1,8 +1,8 @@
 ---
-title: SpingBoot中使用logback日志框架
+title: SpringBoot中使用logback日志框架
 date: 2021-03-06 19:55:54
-tags:
-categories:
+tags: SpringBoot,Java
+categories: 后端
 updated:
 keywords:
 description:

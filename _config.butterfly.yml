@@ -42,7 +42,7 @@ copy:
 #   icon: link || the description
 social:
   fab fa-github: https://github.com/whymesay || Github
-  fas fa-envelope: mailto:dioojj99@gmail.com || Email
+  fas fa-envelope: dioojj99@gmail.com || Email
 
 # search (搜索)
 # --------------------------------------

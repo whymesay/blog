@@ -10,7 +10,7 @@
 <h3 id="系统设计"><a href="#系统设计" class="headerlink" title="系统设计"></a>系统设计</h3><p><a href="https://blog.csdn.net/maple_son/article/details/105026747">一篇，快速搞懂各种重试策略</a></p>
 <h3 id="线程池"><a href="#线程池" class="headerlink" title="线程池"></a>线程池</h3><p><a href="https://javadoop.com/post/java-thread-pool">深度解读 Java 线程池设计思想及源码实现</a><br><a href="https://tech.meituan.com/2020/04/02/java-pooling-pratice-in-meituan.html">Java线程池实现原理及其在美团业务中的实践</a></p>
 <h3 id="JVM"><a href="#JVM" class="headerlink" title="JVM"></a>JVM</h3><p><a href="https://tech.meituan.com/2020/11/12/java-9-cms-gc.html">Java中9种常见的CMS GC问题分析与解决</a><br><a href="https://www.oracle.com/webfolder/technetwork/tutorials/obe/java/gc01/index.html">Java Garbage Collection Basics</a><br><a href="https://segmentfault.com/a/1190000021820577">面试官:你说你熟悉jvm?那你讲一下并发的可达性分析</a></p>
-<h3 id="Spring"><a href="#Spring" class="headerlink" title="Spring"></a>Spring</h3><p><a href="https://mp.weixin.qq.com/s/cimdMmbwfyNBFkTzGuPGeA">面试题：Spring 为何需要三级缓存解决循环依赖，而不是二级缓存？</a></p>
+<h3 id="Spring"><a href="#Spring" class="headerlink" title="Spring"></a>Spring</h3><p><a href="https://mp.weixin.qq.com/s/cimdMmbwfyNBFkTzGuPGeA">面试题：Spring 为何需要三级缓存解决循环依赖，而不是二级缓存？</a><br><a href="https://www.cnblogs.com/grey-wolf/p/13034371.html">曹工说Spring Boot源码（29）– Spring 解决循环依赖为什么使用三级缓存，而不是二级缓存</a></p>
 <h2 id="数据库"><a href="#数据库" class="headerlink" title="数据库"></a>数据库</h2><h3 id="MySql"><a href="#MySql" class="headerlink" title="MySql"></a>MySql</h3><p><a href="https://tech.meituan.com/2014/08/20/innodb-lock.html">Innodb中的事务隔离级别和锁的关系</a><br><a href="https://tech.meituan.com/2016/11/18/dianping-order-db-sharding.html">大众点评订单系统分库分表实践</a><br><a href="https://juejin.cn/post/6844903944188067848">重学MySQL系列(一)：谈谈MySQL架构</a></p>
 <h3 id="Redis"><a href="#Redis" class="headerlink" title="Redis"></a>Redis</h3><p><a href="https://juejin.cn/post/6844903874927525902">10分钟彻底理解Redis的持久化机制：RDB和AOF</a></p>
 <h2 id="中间件"><a href="#中间件" class="headerlink" title="中间件"></a>中间件</h2><h3 id="RocketMQ"><a href="#RocketMQ" class="headerlink" title="RocketMQ"></a>RocketMQ</h3><p><a href="https://juejin.cn/post/6844904008629354504">《浅入浅出》-RocketMQ</a><br><a href="https://www.cnblogs.com/hzmark/p/rocket_txn.html">RocketMQ事务消息实现分析</a><br><a href="https://www.cnblogs.com/hzmark/p/mq-delay-msg.html">如何在MQ中实现支持任意延迟的消息？</a><br><a href="https://segmentfault.com/a/1190000023854950">消息队列之推还是拉，RocketMQ 和 Kafka 是如何做的？</a></p>
@@ -121,7 +121,6 @@
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><h2 id="待看文章"><a href="#待看文章" class="headerlink" title="待看文章"></a>待看文章</h2><ol>
 <li><a href="https://juejin.cn/post/6925217498723778568">全网最硬核 JVM TLAB 分析</a></li>
 <li><a href="https://juejin.cn/post/6936390496122044423">《不看后悔》38个JVM精选问答，让你变成专家！</a></li>
-<li><a href="https://www.cnblogs.com/grey-wolf/p/13034371.html">曹工说Spring Boot源码（29）– Spring 解决循环依赖为什么使用三级缓存，而不是二级缓存</a></li>
 <li><a href="https://cloud.tencent.com/developer/article/1579977">Linux 6种日志查看方法，不会看日志会被鄙视的</a></li>
 </ol>
 <h2 id="待解决问题"><a href="#待解决问题" class="headerlink" title="待解决问题"></a>待解决问题</h2><ol>

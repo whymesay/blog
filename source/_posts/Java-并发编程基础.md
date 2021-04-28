@@ -6,7 +6,7 @@ categories: 后端
 updated:
 keywords:
 description:
-top_img:
+top_img: "/img/header/4.jpg"
 comments: true
 cover:
 toc:

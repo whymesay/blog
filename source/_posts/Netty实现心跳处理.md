@@ -8,7 +8,6 @@ keywords:
 description:
 top_img:
 comments:
-cover: "/img/header/6.jpg"
 toc:
 toc_number:
 copyright:
@@ -41,7 +40,7 @@ import java.util.concurrent.atomic.AtomicInteger;
 /**
  * 心跳处理 每个客户端连接的channel 都有一个handler实例
  *
- * @author whymesay cyhyx521@gmail.com
+ * @author whymesay
  * @date 2020/10/3 17:50
  */
 @Slf4j
@@ -125,7 +124,7 @@ import java.util.concurrent.atomic.AtomicInteger;
 /**
  * 心跳处理 每个客户端连接的channel 都有一个handler实例
  *
- * @author whymesay cyhyx521@gmail.com
+ * @author whymesay 
  * @date 2020/10/3 17:50
  */
 @Slf4j

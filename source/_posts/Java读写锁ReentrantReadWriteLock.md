@@ -8,7 +8,6 @@ keywords:
 description:
 top_img:
 comments: true
-cover: "/img/header/5.jpg"
 toc:
 toc_number:
 copyright:

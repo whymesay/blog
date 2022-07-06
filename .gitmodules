@@ -5,9 +5,3 @@
 [submodule "themes/butterfly"]
 	path = themes/butterfly
 	url = https://github.com/whymesay/hexo-theme-butterfly
-[submodule "themes/shoka"]
-	path = themes/butterfly
-	url = https://github.com/whymesay/hexo-theme-shoka
-[submodule "themes/hexo-theme-shoka"]
-	path = themes/hexo-theme-shoka
-	url = https://github.com/whymesay/hexo-theme-shoka

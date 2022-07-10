@@ -20,7 +20,7 @@ jobs:
       - name: Build
         run: |
           sudo yarn
-          sudo yarn global hexo-cli
+          sudo yarn global add hexo-cli
           sudo hexo clean
           sudo hexo g
 

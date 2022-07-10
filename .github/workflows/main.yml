@@ -23,7 +23,6 @@ jobs:
           sudo npm install hexo-cli -g 
           sudo hexo clean
           sudo hexo g
-          sudo hexo d
 
       - name: Deploy
         uses: JamesIves/github-pages-deploy-action@releases/v3

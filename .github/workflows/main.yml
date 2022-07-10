@@ -19,7 +19,7 @@ jobs:
 
       - name: Build
         run: |
-          sudo npm install
+          sudo npm install npm@6.14.10 -g
           sudo npm install hexo-cli -g 
           sudo hexo clean
           sudo hexo g
